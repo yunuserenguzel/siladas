@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A3BFD01E1B134CC218C649 /* Pods_Siladas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F482D713B381A1EEC31C7F /* Pods_Siladas.framework */; };
+		4BFDFC2930657BEF376F95A9 /* Pods_SiladasUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AE9FA0C123A2AE95160728 /* Pods_SiladasUnitTests.framework */; };
+		D172358823A3CE76006B1F3F /* FirebaseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D172358723A3CE76006B1F3F /* FirebaseObserver.swift */; };
+		D172358A23A3CEB3006B1F3F /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D172358923A3CEB3006B1F3F /* Tour.swift */; };
+		D172358C23A3D999006B1F3F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D172358B23A3D999006B1F3F /* LocationService.swift */; };
+		D172359123A43333006B1F3F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D172359023A43333006B1F3F /* Launch Screen.storyboard */; };
+		D172359323A437B2006B1F3F /* continuous_tracking_fixed.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D172359223A437B2006B1F3F /* continuous_tracking_fixed.gpx */; };
+		D1F113AE23A12A73001C9D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113AD23A12A73001C9D3E /* AppDelegate.swift */; };
+		D1F113B223A12A73001C9D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113B123A12A73001C9D3E /* ViewController.swift */; };
+		D1F113B523A12A73001C9D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F113B323A12A73001C9D3E /* Main.storyboard */; };
+		D1F113B723A12A75001C9D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F113B623A12A75001C9D3E /* Assets.xcassets */; };
+		D1F113C423A12B1B001C9D3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113C323A12B1B001C9D3E /* MapViewController.swift */; };
+		D1F113C623A12B23001C9D3E /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F113C523A12B23001C9D3E /* MapViewController.storyboard */; };
+		D1F113C823A139A3001C9D3E /* FirebaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113C723A139A3001C9D3E /* FirebaseConnector.swift */; };
+		D1F113CA23A13D86001C9D3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F113C923A13D86001C9D3E /* GoogleService-Info.plist */; };
+		D1F113CC23A13DB8001C9D3E /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113CB23A13DB8001C9D3E /* Services.swift */; };
+		D1F113D023A249F2001C9D3E /* TestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D1F113CF23A249F2001C9D3E /* TestLocation.gpx */; };
+		D1F113D823A25BA1001C9D3E /* SiladasUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113D723A25BA1001C9D3E /* SiladasUnitTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1F113DA23A25BA1001C9D3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1F113A223A12A73001C9D3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1F113A923A12A73001C9D3E;
+			remoteInfo = Siladas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36AE9FA0C123A2AE95160728 /* Pods_SiladasUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiladasUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E4077344A09DBC9FEC5498 /* Pods-Siladas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siladas.debug.xcconfig"; path = "Target Support Files/Pods-Siladas/Pods-Siladas.debug.xcconfig"; sourceTree = "<group>"; };
+		433CAB0CDA66567939A4AF6B /* Pods-SiladasUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiladasUnitTests.release.xcconfig"; path = "Target Support Files/Pods-SiladasUnitTests/Pods-SiladasUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		57F482D713B381A1EEC31C7F /* Pods_Siladas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siladas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A0E6C2BB27F83ED43AED13 /* Pods-SiladasUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiladasUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-SiladasUnitTests/Pods-SiladasUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D172358723A3CE76006B1F3F /* FirebaseObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseObserver.swift; sourceTree = "<group>"; };
+		D172358923A3CEB3006B1F3F /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		D172358B23A3D999006B1F3F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		D172359023A43333006B1F3F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D172359223A437B2006B1F3F /* continuous_tracking_fixed.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = continuous_tracking_fixed.gpx; path = ../../../WorkoutStore/WorkoutStore/continuous_tracking_fixed.gpx; sourceTree = "<group>"; };
+		D1F113AA23A12A73001C9D3E /* Siladas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siladas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F113AD23A12A73001C9D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1F113B123A12A73001C9D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1F113B423A12A73001C9D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1F113B623A12A75001C9D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1F113BB23A12A75001C9D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F113C323A12B1B001C9D3E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D1F113C523A12B23001C9D3E /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		D1F113C723A139A3001C9D3E /* FirebaseConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseConnector.swift; path = ../Screens/FirebaseConnector.swift; sourceTree = "<group>"; };
+		D1F113C923A13D86001C9D3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1F113CB23A13DB8001C9D3E /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		D1F113CF23A249F2001C9D3E /* TestLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestLocation.gpx; sourceTree = "<group>"; };
+		D1F113D523A25BA1001C9D3E /* SiladasUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiladasUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F113D723A25BA1001C9D3E /* SiladasUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiladasUnitTests.swift; sourceTree = "<group>"; };
+		D1F113D923A25BA1001C9D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D803405606EAA829E4E3DD /* Pods-Siladas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siladas.release.xcconfig"; path = "Target Support Files/Pods-Siladas/Pods-Siladas.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1F113A723A12A73001C9D3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A3BFD01E1B134CC218C649 /* Pods_Siladas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F113D223A25BA1001C9D3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFDFC2930657BEF376F95A9 /* Pods_SiladasUnitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03FE0F2D70E1847E91BCB1D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57F482D713B381A1EEC31C7F /* Pods_Siladas.framework */,
+				36AE9FA0C123A2AE95160728 /* Pods_SiladasUnitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		875AAEEB438C176C742FB2A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36E4077344A09DBC9FEC5498 /* Pods-Siladas.debug.xcconfig */,
+				D9D803405606EAA829E4E3DD /* Pods-Siladas.release.xcconfig */,
+				A5A0E6C2BB27F83ED43AED13 /* Pods-SiladasUnitTests.debug.xcconfig */,
+				433CAB0CDA66567939A4AF6B /* Pods-SiladasUnitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D172358D23A43136006B1F3F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D1F113CB23A13DB8001C9D3E /* Services.swift */,
+				D1F113C723A139A3001C9D3E /* FirebaseConnector.swift */,
+				D172358723A3CE76006B1F3F /* FirebaseObserver.swift */,
+				D172358B23A3D999006B1F3F /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D172358E23A43154006B1F3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D172358923A3CEB3006B1F3F /* Tour.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D172358F23A43164006B1F3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1F113B623A12A75001C9D3E /* Assets.xcassets */,
+				D1F113BB23A12A75001C9D3E /* Info.plist */,
+				D1F113C923A13D86001C9D3E /* GoogleService-Info.plist */,
+				D1F113CF23A249F2001C9D3E /* TestLocation.gpx */,
+				D172359223A437B2006B1F3F /* continuous_tracking_fixed.gpx */,
+				D172359023A43333006B1F3F /* Launch Screen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1F113A123A12A73001C9D3E = {
+			isa = PBXGroup;
+			children = (
+				D1F113AC23A12A73001C9D3E /* Siladas */,
+				D1F113D623A25BA1001C9D3E /* SiladasUnitTests */,
+				D1F113AB23A12A73001C9D3E /* Products */,
+				875AAEEB438C176C742FB2A4 /* Pods */,
+				03FE0F2D70E1847E91BCB1D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1F113AB23A12A73001C9D3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1F113AA23A12A73001C9D3E /* Siladas.app */,
+				D1F113D523A25BA1001C9D3E /* SiladasUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1F113AC23A12A73001C9D3E /* Siladas */ = {
+			isa = PBXGroup;
+			children = (
+				D172358F23A43164006B1F3F /* Supporting Files */,
+				D172358E23A43154006B1F3F /* Models */,
+				D172358D23A43136006B1F3F /* Services */,
+				D1F113C123A12B08001C9D3E /* Screens */,
+				D1F113AD23A12A73001C9D3E /* AppDelegate.swift */,
+				D1F113B123A12A73001C9D3E /* ViewController.swift */,
+				D1F113B323A12A73001C9D3E /* Main.storyboard */,
+			);
+			path = Siladas;
+			sourceTree = "<group>";
+		};
+		D1F113C123A12B08001C9D3E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D1F113C223A12B10001C9D3E /* Map */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D1F113C223A12B10001C9D3E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D1F113C323A12B1B001C9D3E /* MapViewController.swift */,
+				D1F113C523A12B23001C9D3E /* MapViewController.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D1F113D623A25BA1001C9D3E /* SiladasUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1F113D723A25BA1001C9D3E /* SiladasUnitTests.swift */,
+				D1F113D923A25BA1001C9D3E /* Info.plist */,
+			);
+			path = SiladasUnitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1F113A923A12A73001C9D3E /* Siladas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F113BE23A12A75001C9D3E /* Build configuration list for PBXNativeTarget "Siladas" */;
+			buildPhases = (
+				2A378A9EBFCFDC15FDC14BAC /* [CP] Check Pods Manifest.lock */,
+				D1F113A623A12A73001C9D3E /* Sources */,
+				D1F113A723A12A73001C9D3E /* Frameworks */,
+				D1F113A823A12A73001C9D3E /* Resources */,
+				3EBD11E7650219DADEB399F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siladas;
+			productName = Siladas;
+			productReference = D1F113AA23A12A73001C9D3E /* Siladas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1F113D423A25BA1001C9D3E /* SiladasUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F113DC23A25BA1001C9D3E /* Build configuration list for PBXNativeTarget "SiladasUnitTests" */;
+			buildPhases = (
+				B6D99F42D604DFDEFC6B8F81 /* [CP] Check Pods Manifest.lock */,
+				D1F113D123A25BA1001C9D3E /* Sources */,
+				D1F113D223A25BA1001C9D3E /* Frameworks */,
+				D1F113D323A25BA1001C9D3E /* Resources */,
+				ADD99FDFC148143438C89F29 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1F113DB23A25BA1001C9D3E /* PBXTargetDependency */,
+			);
+			name = SiladasUnitTests;
+			productName = SiladasUnitTests;
+			productReference = D1F113D523A25BA1001C9D3E /* SiladasUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1F113A223A12A73001C9D3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Yunus Güzel";
+				TargetAttributes = {
+					D1F113A923A12A73001C9D3E = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					D1F113D423A25BA1001C9D3E = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = D1F113A923A12A73001C9D3E;
+					};
+				};
+			};
+			buildConfigurationList = D1F113A523A12A73001C9D3E /* Build configuration list for PBXProject "Siladas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1F113A123A12A73001C9D3E;
+			productRefGroup = D1F113AB23A12A73001C9D3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1F113A923A12A73001C9D3E /* Siladas */,
+				D1F113D423A25BA1001C9D3E /* SiladasUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1F113A823A12A73001C9D3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D172359123A43333006B1F3F /* Launch Screen.storyboard in Resources */,
+				D172359323A437B2006B1F3F /* continuous_tracking_fixed.gpx in Resources */,
+				D1F113D023A249F2001C9D3E /* TestLocation.gpx in Resources */,
+				D1F113C623A12B23001C9D3E /* MapViewController.storyboard in Resources */,
+				D1F113CA23A13D86001C9D3E /* GoogleService-Info.plist in Resources */,
+				D1F113B723A12A75001C9D3E /* Assets.xcassets in Resources */,
+				D1F113B523A12A73001C9D3E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F113D323A25BA1001C9D3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A378A9EBFCFDC15FDC14BAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siladas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EBD11E7650219DADEB399F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siladas/Pods-Siladas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siladas/Pods-Siladas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Siladas/Pods-Siladas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD99FDFC148143438C89F29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SiladasUnitTests/Pods-SiladasUnitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SiladasUnitTests/Pods-SiladasUnitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SiladasUnitTests/Pods-SiladasUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D99F42D604DFDEFC6B8F81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiladasUnitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1F113A623A12A73001C9D3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D172358A23A3CEB3006B1F3F /* Tour.swift in Sources */,
+				D1F113CC23A13DB8001C9D3E /* Services.swift in Sources */,
+				D172358C23A3D999006B1F3F /* LocationService.swift in Sources */,
+				D1F113B223A12A73001C9D3E /* ViewController.swift in Sources */,
+				D1F113C423A12B1B001C9D3E /* MapViewController.swift in Sources */,
+				D1F113C823A139A3001C9D3E /* FirebaseConnector.swift in Sources */,
+				D172358823A3CE76006B1F3F /* FirebaseObserver.swift in Sources */,
+				D1F113AE23A12A73001C9D3E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F113D123A25BA1001C9D3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F113D823A25BA1001C9D3E /* SiladasUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1F113DB23A25BA1001C9D3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1F113A923A12A73001C9D3E /* Siladas */;
+			targetProxy = D1F113DA23A25BA1001C9D3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1F113B323A12A73001C9D3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1F113B423A12A73001C9D3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1F113BC23A12A75001C9D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1F113BD23A12A75001C9D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1F113BF23A12A75001C9D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36E4077344A09DBC9FEC5498 /* Pods-Siladas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFKZ2XWSFC;
+				INFOPLIST_FILE = "Siladas/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeg.Siladas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1F113C023A12A75001C9D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D803405606EAA829E4E3DD /* Pods-Siladas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFKZ2XWSFC;
+				INFOPLIST_FILE = "Siladas/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeg.Siladas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1F113DD23A25BA1001C9D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5A0E6C2BB27F83ED43AED13 /* Pods-SiladasUnitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFKZ2XWSFC;
+				INFOPLIST_FILE = SiladasUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D UNIT_TEST";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeg.SiladasUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Siladas.app/Siladas";
+			};
+			name = Debug;
+		};
+		D1F113DE23A25BA1001C9D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433CAB0CDA66567939A4AF6B /* Pods-SiladasUnitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFKZ2XWSFC;
+				INFOPLIST_FILE = SiladasUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D UNIT_TEST";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeg.SiladasUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Siladas.app/Siladas";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1F113A523A12A73001C9D3E /* Build configuration list for PBXProject "Siladas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F113BC23A12A75001C9D3E /* Debug */,
+				D1F113BD23A12A75001C9D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F113BE23A12A75001C9D3E /* Build configuration list for PBXNativeTarget "Siladas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F113BF23A12A75001C9D3E /* Debug */,
+				D1F113C023A12A75001C9D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F113DC23A25BA1001C9D3E /* Build configuration list for PBXNativeTarget "SiladasUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F113DD23A25BA1001C9D3E /* Debug */,
+				D1F113DE23A25BA1001C9D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1F113A223A12A73001C9D3E /* Project object */;
+}

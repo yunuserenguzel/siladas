@@ -1,0 +1,6 @@
+framework module Pods_Siladas {
+  umbrella header "Pods-Siladas-umbrella.h"
+
+  export *
+  module * { export * }
+}

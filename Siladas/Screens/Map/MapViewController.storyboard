@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="QIZ-qa-MyQ">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fTL-5c-FPi" customClass="MapViewController" customModule="Siladas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OJQ-IP-EEX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3dt-gy-esf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3dt-gy-esf" firstAttribute="top" secondItem="wgD-nn-VK5" secondAttribute="top" id="Olo-lt-xOi"/>
+                            <constraint firstItem="3dt-gy-esf" firstAttribute="leading" secondItem="wgD-nn-VK5" secondAttribute="leading" id="TkP-8R-3lB"/>
+                            <constraint firstItem="wgD-nn-VK5" firstAttribute="bottom" secondItem="3dt-gy-esf" secondAttribute="bottom" id="k5l-dd-J1O"/>
+                            <constraint firstItem="wgD-nn-VK5" firstAttribute="trailing" secondItem="3dt-gy-esf" secondAttribute="trailing" id="rSo-Dd-HpX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wgD-nn-VK5"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="3dt-gy-esf" id="ykR-4D-Rxq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxr-dM-6ia" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>

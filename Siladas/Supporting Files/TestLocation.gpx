@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="Xcode">
+    
+    <!--
+     Provide one or more waypoints containing a latitude/longitude pair. If you provide one
+     waypoint, Xcode will simulate that specific location. If you provide multiple waypoints,
+     Xcode will simulate a route visiting each waypoint.
+     -->
+    
+    <wpt lat="10.3157" lon="123.8854">
+    <!--
+    <wpt lat="41.3851" lon="2.1734"> Barcelona
+    <wpt lat="10.3157" lon="123.8854"> Cebu
+    <wpt lat="38.4237" lon="27.1428"> Izmir
+    <wpt lat="40.9862" lon="37.8797"> Ordu
+    <wpt lat="41.0082" lon="28.9784"> Istanbul
+    <wpt lat="39.9334" lon="32.8597"> Ankara
+    -->
+        <name>Cupertino</name>
+        
+        <!--
+         Optionally provide a time element for each waypoint. Xcode will interpolate movement
+         at a rate of speed based on the time elapsed between each waypoint. If you do not provide
+         a time element, then Xcode will use a fixed rate of speed.
+         
+         Waypoints must be sorted by time in ascending order.
+         -->
+        <time>2014-09-24T14:55:37Z</time>
+    </wpt>
+    
+</gpx>
