@@ -7,7 +7,7 @@
      Xcode will simulate a route visiting each waypoint.
      -->
     
-    <wpt lat="10.3157" lon="123.8854">
+    <wpt lat="39.9334" lon="32.8597">
     <!--
     <wpt lat="41.3851" lon="2.1734"> Barcelona
     <wpt lat="10.3157" lon="123.8854"> Cebu
@@ -17,14 +17,6 @@
     <wpt lat="39.9334" lon="32.8597"> Ankara
     -->
         <name>Cupertino</name>
-        
-        <!--
-         Optionally provide a time element for each waypoint. Xcode will interpolate movement
-         at a rate of speed based on the time elapsed between each waypoint. If you do not provide
-         a time element, then Xcode will use a fixed rate of speed.
-         
-         Waypoints must be sorted by time in ascending order.
-         -->
         <time>2014-09-24T14:55:37Z</time>
     </wpt>
     

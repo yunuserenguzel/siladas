@@ -14,6 +14,7 @@
 		D172358C23A3D999006B1F3F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D172358B23A3D999006B1F3F /* LocationService.swift */; };
 		D172359123A43333006B1F3F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D172359023A43333006B1F3F /* Launch Screen.storyboard */; };
 		D172359323A437B2006B1F3F /* continuous_tracking_fixed.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D172359223A437B2006B1F3F /* continuous_tracking_fixed.gpx */; };
+		D174CEA623A9771A00122213 /* test-drive.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D174CEA523A9771A00122213 /* test-drive.gpx */; };
 		D1F113AE23A12A73001C9D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113AD23A12A73001C9D3E /* AppDelegate.swift */; };
 		D1F113B223A12A73001C9D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113B123A12A73001C9D3E /* ViewController.swift */; };
 		D1F113B523A12A73001C9D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F113B323A12A73001C9D3E /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		D172358B23A3D999006B1F3F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		D172359023A43333006B1F3F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D172359223A437B2006B1F3F /* continuous_tracking_fixed.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = continuous_tracking_fixed.gpx; path = ../../../WorkoutStore/WorkoutStore/continuous_tracking_fixed.gpx; sourceTree = "<group>"; };
+		D174CEA523A9771A00122213 /* test-drive.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-drive.gpx"; sourceTree = "<group>"; };
 		D1F113AA23A12A73001C9D3E /* Siladas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siladas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F113AD23A12A73001C9D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F113B123A12A73001C9D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				D1F113CF23A249F2001C9D3E /* TestLocation.gpx */,
 				D172359223A437B2006B1F3F /* continuous_tracking_fixed.gpx */,
 				D172359023A43333006B1F3F /* Launch Screen.storyboard */,
+				D174CEA523A9771A00122213 /* test-drive.gpx */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				D1F113A723A12A73001C9D3E /* Frameworks */,
 				D1F113A823A12A73001C9D3E /* Resources */,
 				3EBD11E7650219DADEB399F5 /* [CP] Embed Pods Frameworks */,
+				5C19D2554B324C2FD0817AFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,6 +289,7 @@
 			files = (
 				D172359123A43333006B1F3F /* Launch Screen.storyboard in Resources */,
 				D172359323A437B2006B1F3F /* continuous_tracking_fixed.gpx in Resources */,
+				D174CEA623A9771A00122213 /* test-drive.gpx in Resources */,
 				D1F113D023A249F2001C9D3E /* TestLocation.gpx in Resources */,
 				D1F113C623A12B23001C9D3E /* MapViewController.storyboard in Resources */,
 				D1F113CA23A13D86001C9D3E /* GoogleService-Info.plist in Resources */,
@@ -340,6 +345,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Siladas/Pods-Siladas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C19D2554B324C2FD0817AFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siladas/Pods-Siladas-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siladas/Pods-Siladas-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Siladas/Pods-Siladas-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ADD99FDFC148143438C89F29 /* [CP] Embed Pods Frameworks */ = {

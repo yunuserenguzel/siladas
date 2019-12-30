@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Give location access to publish your location to other users</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Give location access to publish your location to other users</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Give location access to publish your location to other users</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
@@ -44,7 +50,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Give location access to publish your location to other users</string>
 </dict>
 </plist>
