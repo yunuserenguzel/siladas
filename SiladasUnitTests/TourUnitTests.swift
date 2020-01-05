@@ -1,7 +1,7 @@
 import XCTest
 @testable import Siladas
 
-class SiladasUnitTests: XCTestCase {
+class TourUnitTests: XCTestCase {
   
   func testDictionaryToTour() {
     let dict: [String : Any] = [

@@ -17,6 +17,8 @@
 		D172359123A43333006B1F3F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D172359023A43333006B1F3F /* Launch Screen.storyboard */; };
 		D172359323A437B2006B1F3F /* continuous_tracking_fixed.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D172359223A437B2006B1F3F /* continuous_tracking_fixed.gpx */; };
 		D174CEA623A9771A00122213 /* test-drive.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D174CEA523A9771A00122213 /* test-drive.gpx */; };
+		D1ABF87023C2022B003DD801 /* DatabaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABF86F23C2022B003DD801 /* DatabaseObject.swift */; };
+		D1ABF87223C203C7003DD801 /* DatabaseObjectUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABF87123C203C7003DD801 /* DatabaseObjectUnitTests.swift */; };
 		D1F113AE23A12A73001C9D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113AD23A12A73001C9D3E /* AppDelegate.swift */; };
 		D1F113B223A12A73001C9D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113B123A12A73001C9D3E /* ViewController.swift */; };
 		D1F113B523A12A73001C9D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F113B323A12A73001C9D3E /* Main.storyboard */; };
@@ -27,7 +29,7 @@
 		D1F113CA23A13D86001C9D3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F113C923A13D86001C9D3E /* GoogleService-Info.plist */; };
 		D1F113CC23A13DB8001C9D3E /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113CB23A13DB8001C9D3E /* Services.swift */; };
 		D1F113D023A249F2001C9D3E /* TestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D1F113CF23A249F2001C9D3E /* TestLocation.gpx */; };
-		D1F113D823A25BA1001C9D3E /* SiladasUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113D723A25BA1001C9D3E /* SiladasUnitTests.swift */; };
+		D1F113D823A25BA1001C9D3E /* TourUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113D723A25BA1001C9D3E /* TourUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D172359023A43333006B1F3F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D172359223A437B2006B1F3F /* continuous_tracking_fixed.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = continuous_tracking_fixed.gpx; path = ../../../WorkoutStore/WorkoutStore/continuous_tracking_fixed.gpx; sourceTree = "<group>"; };
 		D174CEA523A9771A00122213 /* test-drive.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-drive.gpx"; sourceTree = "<group>"; };
+		D1ABF86F23C2022B003DD801 /* DatabaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObject.swift; sourceTree = "<group>"; };
+		D1ABF87123C203C7003DD801 /* DatabaseObjectUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObjectUnitTests.swift; sourceTree = "<group>"; };
 		D1F113AA23A12A73001C9D3E /* Siladas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siladas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F113AD23A12A73001C9D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F113B123A12A73001C9D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +71,7 @@
 		D1F113CB23A13DB8001C9D3E /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		D1F113CF23A249F2001C9D3E /* TestLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestLocation.gpx; sourceTree = "<group>"; };
 		D1F113D523A25BA1001C9D3E /* SiladasUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiladasUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1F113D723A25BA1001C9D3E /* SiladasUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiladasUnitTests.swift; sourceTree = "<group>"; };
+		D1F113D723A25BA1001C9D3E /* TourUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourUnitTests.swift; sourceTree = "<group>"; };
 		D1F113D923A25BA1001C9D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9D803405606EAA829E4E3DD /* Pods-Siladas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siladas.release.xcconfig"; path = "Target Support Files/Pods-Siladas/Pods-Siladas.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				D172358923A3CEB3006B1F3F /* Tour.swift */,
+				D1ABF86F23C2022B003DD801 /* DatabaseObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,8 +214,9 @@
 		D1F113D623A25BA1001C9D3E /* SiladasUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1F113D723A25BA1001C9D3E /* SiladasUnitTests.swift */,
+				D1F113D723A25BA1001C9D3E /* TourUnitTests.swift */,
 				D1F113D923A25BA1001C9D3E /* Info.plist */,
+				D1ABF87123C203C7003DD801 /* DatabaseObjectUnitTests.swift */,
 			);
 			path = SiladasUnitTests;
 			sourceTree = "<group>";
@@ -430,6 +436,7 @@
 				D1F113CC23A13DB8001C9D3E /* Services.swift in Sources */,
 				D172358C23A3D999006B1F3F /* LocationService.swift in Sources */,
 				D1F113B223A12A73001C9D3E /* ViewController.swift in Sources */,
+				D1ABF87023C2022B003DD801 /* DatabaseObject.swift in Sources */,
 				D1F113C423A12B1B001C9D3E /* MapViewController.swift in Sources */,
 				D1F113C823A139A3001C9D3E /* FirebaseConnector.swift in Sources */,
 				D172358823A3CE76006B1F3F /* FirebaseObserver.swift in Sources */,
@@ -441,7 +448,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1F113D823A25BA1001C9D3E /* SiladasUnitTests.swift in Sources */,
+				D1F113D823A25BA1001C9D3E /* TourUnitTests.swift in Sources */,
+				D1ABF87223C203C7003DD801 /* DatabaseObjectUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

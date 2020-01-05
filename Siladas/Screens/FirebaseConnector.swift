@@ -31,10 +31,7 @@ final class FirebaseConnector {
                                                 longitude: location.coordinate.longitude))
     let ref = Database.database().reference(withPath: "tours")
     do {
-      let data = try JSONEncoder().encode(tour)
-      var dict: [String: Any] = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as! [String : Any]
-      dict.removeValue(forKey: "key")
-      ref.child(userId).setValue(dict)
+      ref.child(userId).setValue(try tour.encode())
     } catch {
       print(error)
     }

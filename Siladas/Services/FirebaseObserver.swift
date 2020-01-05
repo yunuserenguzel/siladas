@@ -5,10 +5,6 @@ enum Result<T> {
   case error(Swift.Error)
 }
 
-protocol DatabaseObject: Codable {
-  var key: String { get set }
-}
-
 typealias ResultCallback<T> = (Result<T>) -> Void
 
 final class FirebaseObserver<T: DatabaseObject> {
@@ -56,12 +52,10 @@ final class FirebaseObserver<T: DatabaseObject> {
   }
   
   private func extractDatabaseObject<T: DatabaseObject>(from snapshot: DataSnapshot) throws -> T {
-    guard var dict = snapshot.value as? [String: Any] else {
+    guard let dict = snapshot.value as? [String: Any] else {
       throw Error.snapshotNotADictionary
     }
-    dict["key"] = snapshot.key
-    let data = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
-    return try JSONDecoder().decode(T.self, from: data)
+    return try T.decode(from: dict, forKey: snapshot.key)
   }
 }
 
