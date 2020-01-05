@@ -1,11 +1,14 @@
 import Firebase
+import FirebaseAuth
 // TODO: Remove CoreLocation and use domain models
 import CoreLocation
   
 final class FirebaseConnector {
 
   // TODO: Remove this
-  let userId = "Eren"
+  var userId: String {
+    return Auth.auth().currentUser?.displayName ?? ""
+  }
   
   lazy var toursObserver = FirebaseObserver<Tour>(childPath: "tours")
   

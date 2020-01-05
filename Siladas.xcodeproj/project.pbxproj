@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03A3BFD01E1B134CC218C649 /* Pods_Siladas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F482D713B381A1EEC31C7F /* Pods_Siladas.framework */; };
 		4BFDFC2930657BEF376F95A9 /* Pods_SiladasUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AE9FA0C123A2AE95160728 /* Pods_SiladasUnitTests.framework */; };
+		D12EC32723BA4424009779BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12EC32623BA4424009779BA /* LoginViewController.swift */; };
+		D12EC32923BA442E009779BA /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12EC32823BA442E009779BA /* LoginViewController.storyboard */; };
 		D172358823A3CE76006B1F3F /* FirebaseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D172358723A3CE76006B1F3F /* FirebaseObserver.swift */; };
 		D172358A23A3CEB3006B1F3F /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D172358923A3CEB3006B1F3F /* Tour.swift */; };
 		D172358C23A3D999006B1F3F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D172358B23A3D999006B1F3F /* LocationService.swift */; };
@@ -44,6 +46,8 @@
 		433CAB0CDA66567939A4AF6B /* Pods-SiladasUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiladasUnitTests.release.xcconfig"; path = "Target Support Files/Pods-SiladasUnitTests/Pods-SiladasUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		57F482D713B381A1EEC31C7F /* Pods_Siladas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siladas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A0E6C2BB27F83ED43AED13 /* Pods-SiladasUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiladasUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-SiladasUnitTests/Pods-SiladasUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D12EC32623BA4424009779BA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D12EC32823BA442E009779BA /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		D172358723A3CE76006B1F3F /* FirebaseObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseObserver.swift; sourceTree = "<group>"; };
 		D172358923A3CEB3006B1F3F /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		D172358B23A3D999006B1F3F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 				433CAB0CDA66567939A4AF6B /* Pods-SiladasUnitTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D12EC32523BA4416009779BA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D12EC32623BA4424009779BA /* LoginViewController.swift */,
+				D12EC32823BA442E009779BA /* LoginViewController.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D172358D23A43136006B1F3F /* Services */ = {
@@ -178,6 +191,7 @@
 		D1F113C123A12B08001C9D3E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D12EC32523BA4416009779BA /* Login */,
 				D1F113C223A12B10001C9D3E /* Map */,
 			);
 			path = Screens;
@@ -287,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12EC32923BA442E009779BA /* LoginViewController.storyboard in Resources */,
 				D172359123A43333006B1F3F /* Launch Screen.storyboard in Resources */,
 				D172359323A437B2006B1F3F /* continuous_tracking_fixed.gpx in Resources */,
 				D174CEA623A9771A00122213 /* test-drive.gpx in Resources */,
@@ -410,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12EC32723BA4424009779BA /* LoginViewController.swift in Sources */,
 				D172358A23A3CEB3006B1F3F /* Tour.swift in Sources */,
 				D1F113CC23A13DB8001C9D3E /* Services.swift in Sources */,
 				D172358C23A3D999006B1F3F /* LocationService.swift in Sources */,
