@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-final class MapViewController: UIViewController {
+final class MVCMapViewController: UIViewController {
   
   dynamic var pins: [String: MKPointAnnotation] = [:]
   

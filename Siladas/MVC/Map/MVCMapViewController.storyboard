@@ -11,7 +11,7 @@
         <!--Map View Controller-->
         <scene sceneID="QIZ-qa-MyQ">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fTL-5c-FPi" customClass="MapViewController" customModule="Siladas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MVCMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fTL-5c-FPi" customClass="MVCMapViewController" customModule="Siladas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OJQ-IP-EEX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

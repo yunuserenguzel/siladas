@@ -19,12 +19,15 @@
 		D174CEA623A9771A00122213 /* test-drive.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D174CEA523A9771A00122213 /* test-drive.gpx */; };
 		D1ABF87023C2022B003DD801 /* DatabaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABF86F23C2022B003DD801 /* DatabaseObject.swift */; };
 		D1ABF87223C203C7003DD801 /* DatabaseObjectUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABF87123C203C7003DD801 /* DatabaseObjectUnitTests.swift */; };
+		D1ABF87423C20B48003DD801 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABF87323C20B48003DD801 /* MapPresenter.swift */; };
+		D1ABF87B23C21293003DD801 /* MVPMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ABF87A23C21293003DD801 /* MVPMapViewController.storyboard */; };
+		D1ABF87D23C212AA003DD801 /* MVPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABF87C23C212AA003DD801 /* MVPMapViewController.swift */; };
 		D1F113AE23A12A73001C9D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113AD23A12A73001C9D3E /* AppDelegate.swift */; };
 		D1F113B223A12A73001C9D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113B123A12A73001C9D3E /* ViewController.swift */; };
 		D1F113B523A12A73001C9D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F113B323A12A73001C9D3E /* Main.storyboard */; };
 		D1F113B723A12A75001C9D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F113B623A12A75001C9D3E /* Assets.xcassets */; };
-		D1F113C423A12B1B001C9D3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113C323A12B1B001C9D3E /* MapViewController.swift */; };
-		D1F113C623A12B23001C9D3E /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F113C523A12B23001C9D3E /* MapViewController.storyboard */; };
+		D1F113C423A12B1B001C9D3E /* MVCMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113C323A12B1B001C9D3E /* MVCMapViewController.swift */; };
+		D1F113C623A12B23001C9D3E /* MVCMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F113C523A12B23001C9D3E /* MVCMapViewController.storyboard */; };
 		D1F113C823A139A3001C9D3E /* FirebaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113C723A139A3001C9D3E /* FirebaseConnector.swift */; };
 		D1F113CA23A13D86001C9D3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F113C923A13D86001C9D3E /* GoogleService-Info.plist */; };
 		D1F113CC23A13DB8001C9D3E /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F113CB23A13DB8001C9D3E /* Services.swift */; };
@@ -58,14 +61,17 @@
 		D174CEA523A9771A00122213 /* test-drive.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-drive.gpx"; sourceTree = "<group>"; };
 		D1ABF86F23C2022B003DD801 /* DatabaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObject.swift; sourceTree = "<group>"; };
 		D1ABF87123C203C7003DD801 /* DatabaseObjectUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObjectUnitTests.swift; sourceTree = "<group>"; };
+		D1ABF87323C20B48003DD801 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		D1ABF87A23C21293003DD801 /* MVPMapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPMapViewController.storyboard; sourceTree = "<group>"; };
+		D1ABF87C23C212AA003DD801 /* MVPMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPMapViewController.swift; sourceTree = "<group>"; };
 		D1F113AA23A12A73001C9D3E /* Siladas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siladas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F113AD23A12A73001C9D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F113B123A12A73001C9D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1F113B423A12A73001C9D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1F113B623A12A75001C9D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1F113BB23A12A75001C9D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1F113C323A12B1B001C9D3E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		D1F113C523A12B23001C9D3E /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		D1F113C323A12B1B001C9D3E /* MVCMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCMapViewController.swift; sourceTree = "<group>"; };
+		D1F113C523A12B23001C9D3E /* MVCMapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVCMapViewController.storyboard; sourceTree = "<group>"; };
 		D1F113C723A139A3001C9D3E /* FirebaseConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseConnector.swift; path = ../Screens/FirebaseConnector.swift; sourceTree = "<group>"; };
 		D1F113C923A13D86001C9D3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1F113CB23A13DB8001C9D3E /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
@@ -159,6 +165,41 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D1ABF87623C210C5003DD801 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				D1ABF87723C210CF003DD801 /* Map */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		D1ABF87723C210CF003DD801 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D1F113C323A12B1B001C9D3E /* MVCMapViewController.swift */,
+				D1F113C523A12B23001C9D3E /* MVCMapViewController.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D1ABF87823C2127E003DD801 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				D1ABF87923C21285003DD801 /* Map */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		D1ABF87923C21285003DD801 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D1ABF87323C20B48003DD801 /* MapPresenter.swift */,
+				D1ABF87A23C21293003DD801 /* MVPMapViewController.storyboard */,
+				D1ABF87C23C212AA003DD801 /* MVPMapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		D1F113A123A12A73001C9D3E = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +223,8 @@
 		D1F113AC23A12A73001C9D3E /* Siladas */ = {
 			isa = PBXGroup;
 			children = (
+				D1ABF87823C2127E003DD801 /* MVP */,
+				D1ABF87623C210C5003DD801 /* MVC */,
 				D172358F23A43164006B1F3F /* Supporting Files */,
 				D172358E23A43154006B1F3F /* Models */,
 				D172358D23A43136006B1F3F /* Services */,
@@ -197,18 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				D12EC32523BA4416009779BA /* Login */,
-				D1F113C223A12B10001C9D3E /* Map */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		D1F113C223A12B10001C9D3E /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				D1F113C323A12B1B001C9D3E /* MapViewController.swift */,
-				D1F113C523A12B23001C9D3E /* MapViewController.storyboard */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 		D1F113D623A25BA1001C9D3E /* SiladasUnitTests */ = {
@@ -309,10 +342,11 @@
 			files = (
 				D12EC32923BA442E009779BA /* LoginViewController.storyboard in Resources */,
 				D172359123A43333006B1F3F /* Launch Screen.storyboard in Resources */,
+				D1ABF87B23C21293003DD801 /* MVPMapViewController.storyboard in Resources */,
 				D172359323A437B2006B1F3F /* continuous_tracking_fixed.gpx in Resources */,
 				D174CEA623A9771A00122213 /* test-drive.gpx in Resources */,
 				D1F113D023A249F2001C9D3E /* TestLocation.gpx in Resources */,
-				D1F113C623A12B23001C9D3E /* MapViewController.storyboard in Resources */,
+				D1F113C623A12B23001C9D3E /* MVCMapViewController.storyboard in Resources */,
 				D1F113CA23A13D86001C9D3E /* GoogleService-Info.plist in Resources */,
 				D1F113B723A12A75001C9D3E /* Assets.xcassets in Resources */,
 				D1F113B523A12A73001C9D3E /* Main.storyboard in Resources */,
@@ -434,11 +468,13 @@
 				D12EC32723BA4424009779BA /* LoginViewController.swift in Sources */,
 				D172358A23A3CEB3006B1F3F /* Tour.swift in Sources */,
 				D1F113CC23A13DB8001C9D3E /* Services.swift in Sources */,
+				D1ABF87423C20B48003DD801 /* MapPresenter.swift in Sources */,
 				D172358C23A3D999006B1F3F /* LocationService.swift in Sources */,
 				D1F113B223A12A73001C9D3E /* ViewController.swift in Sources */,
 				D1ABF87023C2022B003DD801 /* DatabaseObject.swift in Sources */,
-				D1F113C423A12B1B001C9D3E /* MapViewController.swift in Sources */,
+				D1F113C423A12B1B001C9D3E /* MVCMapViewController.swift in Sources */,
 				D1F113C823A139A3001C9D3E /* FirebaseConnector.swift in Sources */,
+				D1ABF87D23C212AA003DD801 /* MVPMapViewController.swift in Sources */,
 				D172358823A3CE76006B1F3F /* FirebaseObserver.swift in Sources */,
 				D1F113AE23A12A73001C9D3E /* AppDelegate.swift in Sources */,
 			);

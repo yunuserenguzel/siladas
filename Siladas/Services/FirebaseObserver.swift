@@ -43,7 +43,7 @@ final class FirebaseObserver<T: DatabaseObject> {
     return { [weak self] snapshot in
       guard let self = self else { return }
       do {
-        let object: T = try self.extractDatabaseObject(from: snapshot)
+        let object = try self.extractDatabaseObject(from: snapshot)
         resultCallback(.success(object))
       } catch {
         resultCallback(.error(error))
@@ -51,7 +51,7 @@ final class FirebaseObserver<T: DatabaseObject> {
     }
   }
   
-  private func extractDatabaseObject<T: DatabaseObject>(from snapshot: DataSnapshot) throws -> T {
+  private func extractDatabaseObject(from snapshot: DataSnapshot) throws -> T {
     guard let dict = snapshot.value as? [String: Any] else {
       throw Error.snapshotNotADictionary
     }
