@@ -26,3 +26,4 @@ DerivedData/
 ## Gcc Patch
 /*.gcno
 .DS_Store
+/Siladas/Supporting Files/TestLocation.gpx
