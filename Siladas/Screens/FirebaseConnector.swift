@@ -25,13 +25,16 @@ final class FirebaseConnector {
   }
   
   private func updateCurrentUser(with location: CLLocation) {
-    let tour = Tour(key: userId,
-                    speed: location.speed,
-                    lastLocation: Tour.Location(latitude: location.coordinate.latitude,
-                                                longitude: location.coordinate.longitude))
-    let ref = Database.database().reference(withPath: "tours")
+    let lastLocation = Tour.Location(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+    
+    let tourRef = Database.database().reference(withPath: "tours").child(userId)
+    
     do {
-      ref.child(userId).setValue(try tour.encode())
+      let lastLocationEncoded = try lastLocation.encode()
+      tourRef.child("last-location").setValue(lastLocationEncoded)
+      if let key = tourRef.child("locations").childByAutoId().key {
+        tourRef.child("locations").child(key).setValue(lastLocationEncoded)
+      }
     } catch {
       print(error)
     }

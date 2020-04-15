@@ -3,23 +3,28 @@ import MapKit
 
 final class MVPMapViewController: UIViewController {
   
-  dynamic var pins: [String: MKPointAnnotation] = [:]
+  private dynamic var pins: [String: MKPointAnnotation] = [:]
   
   @IBOutlet weak var mapView: MKMapView!
+  
+  private var presenter: MapPresenter!
+  
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    
+    presenter = MapPresenter(view: self)
+  }
+  
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
+    
+    presenter = MapPresenter(view: self)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let tourObserver = Services.shared.firebaseConnector.toursObserver
-    tourObserver
-      .onChildAdded { result in
-        guard case let .success(tour) = result else { return }
-        self.updatePin(for: tour)
-      }
-      .onChildChanged { result in
-        guard case let .success(tour) = result else { return }
-        self.updatePin(for: tour)
-      }
+    presenter.onViewDidLoad()
   }
   
   private func updatePin(for tour: Tour) {
@@ -40,4 +45,12 @@ final class MVPMapViewController: UIViewController {
     }
   }
   
+}
+
+extension MVPMapViewController: MapPresenterView {
+  func set(tours: [Tour]) {
+    tours.forEach { tour in
+      updatePin(for: tour)
+    }
+  }
 }

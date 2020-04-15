@@ -61,8 +61,8 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <LocationScenarioReference
-         identifier = "../Siladas/Supporting Files/TestLocation.gpx"
-         referenceType = "0">
+         identifier = "Mexico City, Mexico"
+         referenceType = "1">
       </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
